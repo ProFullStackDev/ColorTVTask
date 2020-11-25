@@ -133,7 +133,7 @@ const styles = StyleSheet.create ({
   },
   name:{
     fontSize:Value(16),
-    fontWeight:'700',
+    fontWeight:'400',
     letterSpacing:0.4,
     color:'grey',
     paddingTop:Value(6)
