@@ -18,10 +18,19 @@ const ScreenThree = props => {
 
   const renderItem = ({index, item}) => {
     return (
-      <View style={{flex: 1}}>
+      <View
+        style={{
+          flex: 1,
+          width: screenWidth,
+          height: screenHeight,
+          backgroundColor: 'rgba(255,144,131,0.2)',
+        }}
+      >
         <Image
           source={{uri: item.urls.regular}}
           style={{width: screenWidth, height: screenHeight}}
+          resizeMethod="auto"
+          resizeMode="contain"
         />
       </View>
     );
