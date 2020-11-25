@@ -21,7 +21,7 @@ const AlertPopUp = props => {
   const turnOff = () => {
     setTimeout (() => {
       props.setShow ();
-    }, 1500);
+    }, 1800);
   };
   return (
     <Modal animationType="fade" transparent={true} visible={props.show}>

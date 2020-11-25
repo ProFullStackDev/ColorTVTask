@@ -35,11 +35,15 @@ const ScreenOne = () => {
           setSearch ('');
           setData (res.data.results);
           setLoading (false);
+          if (res.data.results.length === 0) {
+            setShow (true);
+            setMessage ('No userfound !');
+          }
         })
         .catch (e => {
           setShow (true);
           data && setData (undefined);
-          setMessage ('user not found !');
+          setMessage ('No user found !');
           setSearch ('');
           setLoading (false);
         });

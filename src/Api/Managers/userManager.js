@@ -14,7 +14,7 @@ const UserProfile = userName => {
 
 const UserPhotos = userName => {
   return get (
-    `users/${userName}/photos/?client_id=UYpNmc0NcAqZzA2NoYmRauiWXoz0a_Hu1v-r1yvdH5k`
+    `users/${userName}/photos/?per_page=30&client_id=UYpNmc0NcAqZzA2NoYmRauiWXoz0a_Hu1v-r1yvdH5k`
   );
 };
 
